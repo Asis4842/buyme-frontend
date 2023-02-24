@@ -23,25 +23,30 @@ const Header = () => {
       
      {!isMobile &&
       <SearchBox>
-   <InputBase placeholder='Search products' />
+   <InputBase sx={{
+  paddingLeft:"5px",
+    color:"#326872"
+   }} placeholder='Search products' />
    <IconButton>
-   <SearchIcon />
+   <SearchIcon sx={{color:"#326872"}} />
    </IconButton>
       </SearchBox>}
     {!isMobile &&
       <UserInfo>
-      <CartButton>
-      <Badge badgeContent={308} color="success">
-      <ShoppingCartOutlinedIcon sx={{color:"#326872"}} />
-      </Badge>
-   
-      </CartButton>
+     
      
       <User>
       <Link to='/login'>
       <AccountCircleOutlinedIcon sx={{color:"#326872"}} />
       </Link>
       </User>
+
+      <CartButton>
+      <Badge badgeContent={308} color="success">
+      <ShoppingCartOutlinedIcon sx={{color:"#326872"}} />
+      </Badge>
+   
+      </CartButton>
      
       </UserInfo>}
       {isMobile && 
@@ -57,15 +62,16 @@ const Header = () => {
 
 const NavBar = styled.div`
 width: '100%';
-height: 58px;
+height: 62px;
 background-color: #fff;
 position: sticky;
 top:0;
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 0px 20px;
+padding: 0px 30px;
 box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+z-index: 100;
 `
 const UserInfo = styled.div`
 display: flex;
