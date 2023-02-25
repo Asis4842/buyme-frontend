@@ -14,9 +14,10 @@ function App() {
      <Routes>
      <Route element={<PublicLayout />}>
      <Route path='/' element={<HomePage />} />
-     </Route>
      <Route path='/login' element={<LoginPage/>}/>
      <Route path="/register" element={<RegisterPage />} />
+     </Route>
+   
      <Route path="*" element={<PageNotFound />} />
      </Routes>
      </BrowserRouter>

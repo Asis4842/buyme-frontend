@@ -31,16 +31,20 @@ export default Banner
 
 const BannerConatiner = styled.div`
 width: 80%;
-height: 60vh;
+min-height: 60vh;
 background-color: #fff;
 box-shadow: 0 5px 4px 0 rgba(0,0,0,.2);
 display: flex;
 
+@media (max-width:650px){
+width: 90%;
+flex-direction: column;
+}
 `
 const BannerImage = styled.div`
 display: flex;
 flex: 1;
-background-color: #3f828f;
+background-color: #326872;
 `
 const BannerDesc = styled.div`
 display: flex;
@@ -54,8 +58,13 @@ p{
     font-size: 38px;
     font-weight: 400;
     text-align: center;
-
 }
+
+@media (max-width:650px){
+  padding-top: 20px;
+ p{ font-size: 28px;}
+}
+
 `
 
 const BuyButton=styled.div`

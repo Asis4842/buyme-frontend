@@ -66,3 +66,46 @@
         id:"abc4"
     },
  ]
+
+ export const BlogsData =[
+    {
+        id:'blg1',
+        title:'Latest Mobiles under 10k',
+        desc:"This blog contains list of best smartphone under 10k in our website.",
+        author:"Mr. Admin",
+        numOfViews:3456,
+        images:["/images/blogs1.jpg"]
+    },
+    {
+        id:'blg2',
+        title:'Latest Watches under 2k',
+        desc:"This blog contains list of best watches under 2k in our website.",
+        author:"Mr. Admin",
+        numOfViews:1801,
+        images:["/images/blogs2.jpg"]
+    },
+    {
+        id:'blg3',
+        title:'Latest Shoes under 2k',
+        desc:"This blog contains list of best shoes under 2k in our website.",
+        author:"Mr. Admin",
+        numOfViews:393,
+        images:["/images/blogs3.jpg"]
+    },
+    {
+        id:'blg4',
+        title:'Latest Headphones under 2k',
+        desc:"This blog contains list of best headphones under 2k in our website.",
+        author:"Mr. Admin",
+        numOfViews:3456,
+        images:["/images/blogs4.jpg"]
+    },
+    {
+        id:'blg5',
+        title:'Latest Laptops under 50k',
+        desc:"This blog contains list of best laptop under 50k in our website.",
+        author:"Mr. Admin",
+        numOfViews:3456,
+        images:["/images/blogs5.jpg"]
+    }
+ ]
